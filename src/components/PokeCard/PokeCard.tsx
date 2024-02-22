@@ -18,7 +18,6 @@ export const PokeCard: React.FC<PokeCardProps> = ({ data, className }) => {
   const handleCardClick = () => {
     dispatch(moveData(data));
   };
-  // console.log('dataaaaa', data);
   return (
     <>
       <Link className={className ? className : styles.cardLink} onClick={handleCardClick} to='/pokeinfo'>

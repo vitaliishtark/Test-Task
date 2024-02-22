@@ -38,11 +38,9 @@ const Home = () => {
     setFilterActive(selectedValue === 'all' ? false : true);
   
     if (selectedValue === 'all') {
-      // Fetch all pokemons if the selected value is 'all'
       const allPokemons = await api.findPokemon(createPokemonIds(20));
       setPokemonData(allPokemons);
     } else {
-      // Fetch pokemons by type otherwise
       const pokemons = await api.getPokemonsByType(selectedValue);
       const firstTwentyPokemon = pokemons.slice(0, 20).map((pokemon: any) => pokemon.pokemon.name);
       const pokemonData = await api.findPokemon(firstTwentyPokemon);
@@ -87,11 +85,11 @@ const Home = () => {
     fetchData();
   }, [location.search]);
   return (
-    <div className={styles['pokemons-container']}>
+    <div className={styles.pokemonsContainer}>
       <Header />
       <div className={styles.header}>
         <h1 className={styles.title}>Pokemons!</h1>
-        <FormControl className={styles['form-control']} >
+        <FormControl className={styles.formControl} >
           <InputLabel id="pokemon-type-label">Select Pokemon Type</InputLabel>
           <Select
             labelId="pokemon-type-label"
@@ -127,9 +125,9 @@ const Home = () => {
       {isLoading ? (
         <p>Loading...</p>
       ) : (
-        <div className={styles['poke-cards']}>
+        <div className={styles.pokeCards}>
           {pokemonData.map((data: any, index: number) => (
-            <PokeCard className={styles['poke-card']} key={index} data={data} />
+            <PokeCard className={styles.pokeCard} key={index} data={data} />
           ))}
         </div>
       )}

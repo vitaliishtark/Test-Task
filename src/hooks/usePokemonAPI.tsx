@@ -76,7 +76,7 @@ const usePokemonAPI = (): PokemonAPI => {
       return response.data.pokemon;
     } catch (error) {
       setError((error as Error).message || 'An error occurred');
-      return []; // or handle error appropriately
+      return [];
     } finally {
       setIsLoading(false);
     }

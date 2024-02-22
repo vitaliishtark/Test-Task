@@ -1,69 +1,69 @@
-.pokemons-container {
+.pokemonsContainer {
     max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
 
-}
+    .header {
+        padding: 10px;
+        text-align: center;
 
-.header {
-    padding: 10px;
-    text-align: center;
-
-}
-
-.title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.form-control {
-    border: 1px solid black;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.poke-cards {
-    // display: grid;
-    // grid-template-columns: repeat(3, minmax(0, 1fr));
-    // grid-gap: 20px;
-    display: flex;
-    text-align: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    .noPokemonFound {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 65vh;
-        font-size: 24px;
-        font-weight: 500;
     }
 
-    .poke-card {
-        text-decoration: none;
-        background-color: #f9f9f9;
-        border-radius: 10px;
-        padding: 20px;
-        width: 28%;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        display: flex;
-        justify-content: center;
-        margin-bottom: 30px;
-        img {
-            width: 100%;
-            border-radius: 5px;
-        }
-
-        h2 {
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
-
-        p {
-            margin: 0;
-        }
+    .title {
+        font-size: 2rem;
+        margin-bottom: 20px;
     }
 
+    .formControl {
+        border: 1px solid black;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
+    .pokeCards {
+        // display: grid;
+        // grid-template-columns: repeat(3, minmax(0, 1fr));
+        // grid-gap: 20px;
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .noPokemonFound {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 65vh;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        .pokeCard {
+            text-decoration: none;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            width: 28%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+
+            img {
+                width: 100%;
+                border-radius: 5px;
+            }
+
+            h2 {
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+
+
+    }
 }

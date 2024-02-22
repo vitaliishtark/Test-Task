@@ -1,11 +1,7 @@
-// Footer.module.scss
-
 .footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-  }
-  
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
   .footerContent {
     max-width: 1200px;
     margin: 0 auto;
@@ -14,7 +10,7 @@
     align-items: center;
   }
   
-  .footer p {
+  p {
     margin: 0;
   }
-  
+}
