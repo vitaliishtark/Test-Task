@@ -1,0 +1,118 @@
+.pokeInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 85vh;
+
+    .header {
+        width: 20%;
+        display: flex;
+        height: 15%;
+        justify-content: space-around;
+        align-items: center;
+
+        .backLink {
+            border: 3px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #6a5151;
+            }
+        }
+
+        h4 {
+            font-size: 18px;
+        }
+    }
+
+    .pokeData {
+        display: flex;
+        width: 90%;
+        justify-content: space-around;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+
+        .info {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3 {
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+            }
+
+            .moves {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                width: 100%;
+
+                p {
+                    font-weight: 500;
+                    width: 33%;
+                    /* Adjusted width for better spacing */
+                    margin-bottom: 10px;
+                    /* Added margin for better separation */
+                    padding: 8px;
+                    background-color: #ddd;
+                    border-radius: 8px;
+                    border: 1px solid #aaa;
+                    text-align: center;
+                    transition: background-color 0.3s ease;
+
+                    &:hover {
+                        background-color: #ccc;
+                    }
+                }
+            }
+
+            .types {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                width: 100%;
+
+                .type {
+                    text-decoration: none;
+                    color: black;
+                    width: 25%;
+                    p {
+                        padding: 8px;
+                        border-radius: 8px;
+                        font-weight: 500;
+                        border: 1px solid #aaa;
+                        margin-bottom: 10px;
+                        transition: background-color 0.3s ease;
+
+                        &:hover {
+                            background-color: #ccc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .footer {
+        width: 100%;
+        background-color: #333;
+        color: white;
+    }
+}

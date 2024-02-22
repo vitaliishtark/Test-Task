@@ -1,0 +1,39 @@
+.header {
+    height: 15vh;
+    border: 1px solid black;
+    background-color: #B33225;
+
+    .logo {
+        width: 10%;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .searchBar {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 10px;
+        .customSearchBarIput {
+            color: white;
+            height: 30px;
+            width: 300px;
+        }
+
+        .invalidText {
+            display: none;
+            position: absolute;
+            bottom: -40px;
+            width: 200px;
+        }
+    }
+
+}
