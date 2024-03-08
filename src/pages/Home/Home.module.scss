@@ -1,0 +1,68 @@
+.pokemonsContainer {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        background-color: #f2f2f9;
+        padding: 20px;
+    }
+
+    .header {
+        padding: 10px;
+        background-color: #f2f2f9;
+    }
+
+    .title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+
+    .pokeCards {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #f2f2f9;
+        padding-top: 40px;
+        padding-bottom: 20px;
+
+        .noPokemonFound {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 65vh;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        .pokeCard {
+            text-decoration: none;
+            width: 28%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            transition: all 0.1s ease;
+            img {
+                width: 100%;
+            }
+
+            h2 {
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .pokeCard:hover {
+            transform: translateY(-20px);
+        }
+
+    }
+}

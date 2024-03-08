@@ -1,0 +1,131 @@
+.pokeInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 85vh;
+
+    .header {
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .backLink {
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+            background-color: #f3f3f9;
+
+            &:hover {
+                background-color: #6a5151;
+            }
+        }
+
+        h4 {
+            font-size: 18px;
+        }
+    }
+
+    .pokeData {
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 10px;
+        margin: auto 0;
+        .pokeCard {
+            border-radius: 100px !important;
+            width: 100%;
+            height: 100%;
+            .pokemonImage {
+                border-radius: 100px !important;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .info {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+                text-align: start;
+                padding-left: 40px;
+            }
+
+            .moves {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                width: 50%;
+                display: flex;
+
+                .move {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    font-weight: 500;
+                    width: 40%;
+                    margin-bottom: 10px;
+                   
+                    border-radius: 8px;
+                    transition: background-color 0.3s ease;
+                    user-select: none;
+                    
+                    &:hover {
+                        background-color: #ccc;
+                    }
+                }
+
+            }
+
+            .types {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                width: 51%;
+                padding-left: 10px;
+
+                .type {
+                    text-decoration: none;
+                    color: black;
+                    width: 48%;
+                    flex-wrap: nowrap;
+                    p {
+                        padding: 8px 0px;
+                        border-radius: 8px;
+                        font-weight: 500;
+                        border: 1px solid #aaa;
+                        transition: background-color 0.3s ease;
+
+                        &:hover {
+                            background-color: #ccc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .footer {
+        width: 100%;
+        background-color: #333;
+        color: white;
+        margin-top: auto;
+    }
+}

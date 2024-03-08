@@ -1,0 +1,38 @@
+.header {
+    height: 15vh;
+
+    .logo {
+        width: 46px;
+        height: 42px;
+        img {
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .searchBar {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 10px;
+        .customSearchBarIput {
+            color: white;
+            height: 30px;
+            width: 300px;
+        }
+
+        .invalidText {
+            display: none;
+            position: absolute;
+            bottom: -40px;
+            width: 200px;
+        }
+    }
+
+}
